@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="site-title">げんきのともだち！</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Input Sources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- BREADCRUMBS -->
+    <ul class="breadcrumbs">
+      <li class="breadcrumb"><a href="#">Genki</a></li>
+      <li class="breadcrumb"><a href="#">Chapter 1</a></li>
+      <li class="breadcrumb"><a href="#">Input 1</a></li>
+      <li class="breadcrumb">Reading</li>
+    </ul>
+
+    <!-- INPUT CONTAINER -->
+    <section class="input-container">
+      <h2 class="input-container-title">Input 1 Reading</h2>
+      <p>Read the following paragraph, then do the circling questions.
+      <div class="input">
+        <h4 class="title">Reading <button>Hide</button></h4>
+        <div class="text"><p>私の名前はつきのうさぎです。だいがくせいです。せんこうはえいごです。私のでんわばんごうは０９０−２０４１−７０３２です。</p></div>
+      </div>
+
+      <div class="vocab-container">
+        <h4 class="vocab-container-title">Input Vocabulary <button class="vocab-button">Hide</button></h4>
+        <ul class="vocab-list">
+          <li class="vocab-list-item">私の名前：My name</li>
+          <li class="vocab-list-item">です：Is</li>
+          <li class="vocab-list-item">だいがく：Student</li>
+        </ul>
+    </div>
+    </section>
+
+    <!-- INPUT CONTAINER - HIDDEN INPUT AND VOCAB -->
+    <section class="input-container">
+      <h2 class="input-container-title">Input 1 Reading</h2>
+      <p>Read the following paragraph, then do the circling questions.
+      <div class="input">
+        <h4 class="title">Reading <button>Show</button></h4>
+        <div class="text hidden">
+          <p>私の名前はつきのうさぎです。だいがくせいです。せんこうはえいごです。私のでんわばんごうは０９０−２０４１−７０３２です。</p>
+        </div>
+      </div>
+
+      <div class="vocab-container">
+        <h4 class="vocab-container-title">Vocabulary <button class="vocab-button">Show</button></h4>
+        <ul class="vocab-list hidden">
+          <li class="vocab-list-item">私の名前：My name</li>
+          <li class="vocab-list-item">です：Is</li>
+          <li class="vocab-list-item">だいがく：Student</li>
+        </ul>
+    </div>
+    </section>
+
+    <!-- BINARY QUESTION -->
+    <section class="activity-container">
+      <p>Answer the question based on the reading above.</p>
+
+      <div class="activity">
+        <div class="activity-number">#いち</div>
+        <div class="activity-question">
+          わたしのなまえはボッブですか。
+        </div>
+        <div class="activity-answer-choices">
+          <button class="activity-answer-button affirmative-answer">はい、ボッブです。</button>
+          <button class="activity-answer-button negative-answer last-button">いいえ、ボッブじゃないです。</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BINARY QUESTION RIGHT ANSWER -->
+    <section class="activity-container">
+      <p>You got it right! Click the next button to continue.</p>
+
+      <div class="activity right-answer">
+        <div class="activity-number">#いち</div>
+        <div class="activity-question">
+          わたしのなまえはボッブですか。
+        </div>
+        <div class="activity-answer-response">
+          いいえ、ボッブじゃないです。つきのうさぎです。
+        </div>
+        <button class="next-button">Next</button>
+      </div>
+    </section>
+
+    <!-- BINARY QUESTION WRONG ANSWER -->
+    <section class="activity-container">
+      <p>You got it wrong! 😭 Click the button to try again.</p>
+
+      <div class="activity wrong-answer">
+        <div class="activity-number">#いち</div>
+        <div class="activity-question">
+          わたしのなまえはボッブですか。
+        </div>
+        <div class="activity-answer-response">
+          はい、ボッブです。
+        </div>
+        <button class="next-button">Try again</button>
+      </div>
+    </section>
+
+    <!-- FILL IN BLANK QUESTION -->
+    <section class="activity-container">
+      <p>Answer the question by filling in the blank. You must use hiragana, katakana, or kanji in your answer. For information about how to use the Japanese keyboard on your device, see <a href="#">here</a>.</p>
+
+      <div class="activity">
+        <div class="activity-number">#に</div>
+        <div class="activity-question">
+          せんこうはなんですか。
+        </div>
+        <div class="activity-answer-fill-in-blank">
+          <input type="text" class="activity-answer-input with-text-behind" /><span class="input-text-behind">です</span>。
+        </div>
+        <button class="next-button">Submit answer</button>
+      </div>
+    </section>
+
+    <!-- FILL IN BLANK RIGHT ANSWER -->
+    <section class="activity-container">
+      <p>You got it right! Click the next button to continue.</p>
+
+      <div class="activity right-answer">
+        <div class="activity-number">#に</div>
+        <div class="activity-question">
+          せんこうはなんですか。
+        </div>
+        <div class="activity-answer-fill-in-blank">
+          <input type="text" class="activity-answer-input with-text-behind" value="つきのうさぎ" /><span class="input-text-behind">です</span>。
+        </div>
+        <button class="next-button">Next</button>
+      </div>
+    </section>
+
+    <!-- FILL IN BLANK WRONG INPUT -->
+    <section class="activity-container">
+      <p>There's an issue with your input. You must use hiragana, katakana, or kanji in your answer. For information about how to use the Japanese keyboard on your device, see <a href="#">here</a>.</p>
+
+      <div class="activity">
+        <div class="activity-number">#に</div>
+        <div class="activity-question">
+          せんこうはなんですか。
+        </div>
+        <div class="activity-answer-fill-in-blank">
+          <input type="text" class="activity-answer-input with-text-behind incorrect-input" value="つきのうさぎ" /><span class="input-text-behind">です</span>。
+        </div>
+        <button class="next-button">Try again</button>
+      </div>
+    </section>
+
+    <!-- FILL IN BLANK WRONG ANSWER -->
+    <section class="activity-container">
+      <p>You got it wrong! 😭 Click the button to try again.</p>
+
+      <div class="activity wrong-answer">
+        <div class="activity-number">#に</div>
+        <div class="activity-question">
+          せんこうはなんですか。
+        </div>
+        <div class="activity-answer-fill-in-blank">
+          <input type="text" class="activity-answer-input with-text-behind" value="ネーサン" /><span class="input-text-behind">です</span>。
+        </div>
+        <button class="next-button">Try again</button>
+      </div>
+    </section>
+
+    <!-- ACTIVITY TRUE / FALSE STATEMENTS -->
+    <section class="activity-container">
+      <p>Check off all statements that are true.</p>
+
+      <div class="activity">
+        <div class="activity-number">#さん</div>
+        <form class="statement-form">
+
+          <div class="statement">
+            <input type="checkbox" id="statement-1" name="statement-1" />
+            <label for="statement-1">わたしのなまえはうさぎです。</label>
+          </div>
+
+          <div class="statement">
+            <input type="checkbox" id="statement-2" name="statement-2" />
+            <label for="statement-2">だいがくせいです。</label>
+          </div>
+
+          <input type="submit" value="Submit" />
+
+        </form>
+      </div>
+    </section>
+
+    <!-- ACTIVITY TRUE / FALSE STATEMENTS - RIGHT ANSWER -->
+    <section class="activity-container">
+      <p>You got it right! Click the next button to continue.</p>
+
+      <div class="activity right-answer">
+        <div class="activity-number">#さん</div>
+        <form class="statement-form">
+
+          <div class="statement">
+            <input type="checkbox" id="statement-1" name="statement-1" checked />
+            <label for="statement-1">わたしのなまえはうさぎです。</label>
+          </div>
+
+          <div class="statement">
+            <input type="checkbox" id="statement-2" name="statement-2" />
+            <label for="statement-2">だいがくせいです。</label>
+          </div>
+
+        </form>
+        <button class="next-button">Next</button>
+      </div>
+    </section>
+
+    <!-- ACTIVITY TRUE / FALSE STATEMENTS - WRONG ANSWER -->
+    <section class="activity-container">
+      <p>You got it wrong! 😭 Click the button to try again.</p>
+
+      <div class="activity wrong-answer">
+        <div class="activity-number">#さん</div>
+        <form class="statement-form">
+
+          <div class="statement">
+            <input type="checkbox" id="statement-1" name="statement-1" />
+            <label for="statement-1">わたしのなまえはうさぎです。</label>
+          </div>
+
+          <div class="statement">
+            <input type="checkbox" id="statement-2" name="statement-2" checked />
+            <label for="statement-2">だいがくせいです。</label>
+          </div>
+
+        </form>
+        <button class="next-button">Try again</button>
+      </div>
+    </section>
+
+    <!-- ACTIVITY FILL IN THE BLANK -->
+    <section class="activity-container">
+      <p>How much of the reading can you remember? You must use hiragana, katakana, or kanji in your answer. For information about how to use the Japanese keyboard on your device, see <a href="#">here</a>.</p>
+
+      <div class="activity">
+        <div class="activity-number">#さん</div>
+        <form class="fill-in-blank-form">
+
+          <div class="fill-in-blank">
+            <label for="statement-1">1. おなまえはなんですか。</label>
+            <input type="text" id="statement-1" name="statement-1" />
+          </div>
+
+          <div class="fill-in-blank">
+            <label for="statement-1">2. お仕事はなんですか。</label>
+            <input type="text" id="statement-2" name="statement-2" />
+          </div>
+
+          <input type="submit" value="Submit" />
+
+        </form>
+      </div>
+    </section>
+
+    <!-- ACTIVITY FILL IN THE BLANK - CORRECT ANSWER-->
+    <section class="activity-container">
+      <p>You got it right! Click the next button to continue.</p>
+
+      <div class="activity right-answer">
+        <div class="activity-number">#さん</div>
+        <form class="fill-in-blank-form">
+
+          <div class="fill-in-blank">
+            <label for="statement-1">1. おなまえはなんですか。</label>
+            <input type="text" id="statement-1" name="statement-1" value="つきのうさぎ" />
+          </div>
+
+          <div class="fill-in-blank">
+            <label for="statement-1">2. お仕事はなんですか。</label>
+            <input type="text" id="statement-2" name="statement-2" value="だいがくせいです" />
+          </div>
+
+        </form>
+        <button class="next-button">Next</button>
+      </div>
+    </section>
+
+    <!-- ACTIVITY FILL IN THE BLANK - WRONG INPUT -->
+    <section class="activity-container">
+      <p>There's an issue with one of your answers. You must use hiragana, katakana, or kanji in your answer. For information about how to use the Japanese keyboard on your device, see <a href="#">here</a>.</p>
+
+      <div class="activity">
+        <div class="activity-number">#さん</div>
+        <form class="fill-in-blank-form">
+
+          <div class="fill-in-blank">
+            <label for="statement-1">1. おなまえはなんですか。</label>
+            <input type="text" id="statement-1" name="statement-1" value="つきのうさぎ" />
+          </div>
+
+          <div class="fill-in-blank">
+            <label for="statement-1">2. お仕事はなんですか。</label>
+            <input type="text" id="statement-2" name="statement-2" class="incorrect-input" value="つきのうさぎ" />
+          </div>
+
+          <input type="submit" value="Submit" />
+
+        </form>
+      </div>
+    </section>
+
+    <!-- ACTIVITY FILL IN THE BLANK - WRONG ANSWER -->
+    <section class="activity-container">
+      <p>You got it wrong! 😭 Change your answers, then click the button to try again.</p>
+
+      <div class="activity wrong-answer">
+        <div class="activity-number">#さん</div>
+        <form class="fill-in-blank-form">
+
+          <div class="fill-in-blank">
+            <label for="statement-1">1. おなまえはなんですか。</label>
+            <input type="text" id="statement-1" name="statement-1" value="つきのうさぎ" />
+          </div>
+
+          <div class="fill-in-blank">
+            <label for="statement-1">2. お仕事はなんですか。</label>
+            <input type="text" id="statement-2" name="statement-2" value="つきのうさぎ" />
+          </div>
+
+        </form>
+        <button class="next-button">Try again</button>
+      </div>
+    </section>
+
+    <!-- DONE WITH PRACTICE -->
+    <section class="activity-container">
+      <div class="activity done">
+        <h4>All done! 🎉</h4>
+        <p>You've finished all the circling and activity practice for Input 1 Reading. Do you want to <a href="#">practice again</a>, or <a href="#">go on to the next activity</a>?
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    This website copyright Nathan Beck. Genki Textbook copyright organization name.
+  </footer>
+</body>
+
+</html>
