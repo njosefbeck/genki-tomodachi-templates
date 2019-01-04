@@ -420,10 +420,27 @@ footer {
   border: 3px solid black;
   border-radius: 5px;
   border-left: 5px solid black;
-  padding: 10px;
+  padding: 15px;
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 10px;
+}
+
+.input-list-item a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.input-list-item.complete {
+  background-color: #FFC400;
+}
+
+.input-list-item.complete a {
+  color: #000;
+}
+
+.input-list-item.complete a:visited {
+  color: #000;
 }
 
 .input-list-item h4 {
@@ -437,7 +454,11 @@ footer {
 }
 
 .input-list-item-activities li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.input-list-item-activities li:last-child {
+  margin-bottom: 0;
 }
 
 .input-list-item-activities .circle,
@@ -459,5 +480,5 @@ footer {
   height: 10px;
   border-radius: 100%;
   margin-right: 5px;
-  background-color: #CCFF90;
+  background-color: #FFC400;
 }
