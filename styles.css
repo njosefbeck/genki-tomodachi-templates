@@ -389,3 +389,75 @@ footer {
   display: block;
   width: 100%;
 }
+
+/* TEXTBOOK PAGE */
+.textbook-title,
+.chapter {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.textbook-title {
+  margin-bottom: 0;
+}
+
+.chapter-title {
+  margin: 0;
+}
+
+.input-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.input-list-item {
+  border: 3px solid black;
+  border-radius: 5px;
+  border-left: 5px solid black;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.input-list-item h4 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.input-list-item-activities {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.input-list-item-activities li {
+  margin-bottom: 5px;
+}
+
+.input-list-item-activities .circle,
+.input-list-item-activities a {
+  display: inline-block;
+}
+
+.input-list-item-activities .circle {
+  border: 2px solid black;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.input-list-item-activities .circle.complete {
+  border: 2px solid black;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 5px;
+  background-color: #CCFF90;
+}
