@@ -271,14 +271,6 @@ footer {
   margin-bottom: 0;
 }
 
-.affirmative-answer {
-  background-color: #CCFF90;
-}
-
-.negative-answer {
-  background-color: #FF8A80;
-}
-
 .activity-answer-response,
 .activity-answer-fill-in-blank {
   text-align: center;
